@@ -1,0 +1,85 @@
+/* General styling for the body */
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font for the body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Styling for the MP3 player container */
+#mp3-player {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for subtle depth */
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect for the MP3 player container */
+#mp3-player:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for the file input */
+#audioFileInput {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect for the file input */
+#audioFileInput:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Styling for the audio element */
+#audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styling for the controls container */
+#controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for the control buttons */
+#controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff; /* Primary blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+/* Hover effect for the control buttons */
+#controls button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slightly lift on hover */
+}
+
+/* Responsive design: Adjust layout on smaller screens */
+@media (max-width: 480px) {
+    #controls button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
